@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Form Masukkan</title>
+    </head>
+    <script lang="javascript">
+        function test() {
+            var a = document.kirim.T1.value //document.kirim(form).T1(input1).value(isinya)
+            if (a%2 == 0) {
+                document.kirim.T2.value="Bilangan genap"
+            } else {
+                document.kirim.T2.value="Bilangan ganjil"
+            }
+        }
+    </script>
+    <body>
+        <form method="post" name="kirim">
+            <p>Bilangan <input type="text" name="T1"><br></p>
+            <p><input type="button" value="TEBAK" name="B1" onclick="test()"></p>
+            <p>Merupakan Bilangan <input type="text" name="T2" size="20"></p>
+        </form>
+    </body>
+</html>

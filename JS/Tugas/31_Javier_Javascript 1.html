@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Tugas Praktikum 1</title>
+    </head>
+    <script>
+        function hitung() {
+            var nilai = document.form.nilai.value;
+
+            if (nilai > 100) {
+                document.form.hasil.value = "Masukkan nilai dari 0 - 100 !!";
+            } else if (nilai >= 93) {
+                document.form.hasil.value = "A";
+            } else if (nilai >= 83) {
+                document.form.hasil.value = "B";
+            } else if (nilai >= 75) {
+                document.form.hasil.value = "C";
+            } else if (nilai >= 50) {
+                document.form.hasil.value = "D";
+            } else if (nilai >= 0) {
+                document.form.hasil.value = "E";
+            } else {
+                document.form.hasil.value = "Masukkan nilai dari 0 - 100 !!";
+            }
+        }
+    </script>
+    <body>
+        <form method="post" name="form">
+            <p>Masukkan nilai: <input type="text" name="nilai">
+                <input type="button" value="Lihat hasil" name="submit" onclick="hitung()">
+            </p>
+            <p>Anda mendapatkan nilai: <input type="text" name="hasil" size="30"></p>
+        </form>
+    </body>
+</html>
