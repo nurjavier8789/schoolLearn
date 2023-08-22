@@ -1,0 +1,19 @@
+* {
+    font-family: 'torus';
+}
+
+.box {
+    position: absolute;
+    top: 2.5%;
+    left: 40%;
+    width: 20%;
+    height: 50%;
+    background: #E2E2E2;
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 1px 1px 5px 5px #C4C4C4;
+}
+
+.space {
+    padding-top: 10px;
+}

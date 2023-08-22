@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'google sans';
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(201, 251, 255);
+        }
+
+        .wrapper {
+            margin-top: 230px;
+            background-color: lightgray;
+            width: 350px;
+            height: 400px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        p {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .username-in {
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+
+        .pass {
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .inputuse,
+        .passs {
+            display: inline-block;
+            padding: 2%;
+            border: 2px solid red;
+        }
+
+        input {
+            width: 90%;
+        }
+
+        button {
+            margin-top: 50px;
+            margin-left: 10px;
+            background-color: red;
+            border: 10px;
+            width: 92.5%;
+            padding: 10px;
+            height: fit-content;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(207, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>Login</p>
+        <form action="done.html" method="post">
+            <div class="username-in">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" name="username" class="inputuse">
+            </div>
+
+            <div class="pass">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password" class="passs">
+            </div>
+
+            <button type="submit" name="buton" class="login">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
