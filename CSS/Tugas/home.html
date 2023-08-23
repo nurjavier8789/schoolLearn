@@ -7,10 +7,92 @@
 </head>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        background-color: #383838;
+        color: white;
+        font-size: 32px;
+    }
+
+    .nav {
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 80px;
+        background-color: #2E2E2E;
+    }
+
+    .nav .name {
+        float: left;
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    nav {
+        float: right;
+        padding: 30px;
+        list-style: none;
+        display: flex;
+        margin: 0px;
+        font-size: 18px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: wheat;
+    }
+
+    .intro {
+        padding-top: 1px;
+    }
+
+    .intro p {
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    .pendidikan {
+        margin-top: 1000px;
+    }
+
+    .pendidikan p {
+        text-align: center;
+    }
 
 </style>
 
 <body>
-    
+    <div class="nav">
+        <div class="name">Nur Javier Prasetyo</div>
+        <nav>
+            <a href="#hom">Home</a>
+            <a href="#pend">Pendidikan</a>
+        </nav>
+    </div>
+
+    <section class="intro" id="hom">
+        <p>
+            Hello! My name is <b>Nur Javier Prasetyo</b><br><br>
+            Nice to meet you :D
+        </p>
+    </section>
+
+    <section class="pendidikan" id="pend">
+        <p>Pendidikan</p>
+    </section>
 </body>
 </html>
