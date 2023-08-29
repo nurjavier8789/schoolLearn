@@ -5,8 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir</title>
-    <link rel="stylesheet" href="formFB.css">
 </head>
+
+<style>
+    .box {
+        position: absolute;
+        top: 11.5%;
+        left: 40%;
+        width: 20%;
+        height: 50%;
+        background: #E2E2E2;
+        border-radius: 20px;
+        z-index: -1;
+        box-shadow: 1px 1px 5px 5px #C4C4C4;
+    }
+
+    .space {
+        padding-top: 100px;
+    }
+</style>
 
 <body>
     <div class="space"></div>
@@ -14,16 +31,16 @@
         <h1>Create New Account</h1>
         <div class="box"></div>
         <form action="done.html" method="post">
-            <table cellpadding="3">
+            <table cellpadding="2">
                 <tr>
                     <td><input type="text" placeholder="First Name"></td>
                     <td><input type="text" placeholder="Last Name"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="text" placeholder="Email" size="44"></td>
+                    <td colspan="2"><input type="text" placeholder="Email" size="46"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="password" placeholder="New Password" size="44"></td>
+                    <td colspan="2"><input type="password" placeholder="New Password" size="46"></td>
                 </tr>
                 <tr>
                     <td>

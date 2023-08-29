@@ -1,10 +1,6 @@
-* {
-    font-family: 'torus';
-}
-
 .box {
     position: absolute;
-    top: 2.5%;
+    top: 11.5%;
     left: 40%;
     width: 20%;
     height: 50%;
@@ -15,5 +11,5 @@
 }
 
 .space {
-    padding-top: 10px;
+    padding-top: 100px;
 }
