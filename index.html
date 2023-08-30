@@ -7,6 +7,13 @@
 </head>
 
 <style>
+    @font-face {
+        font-family: 'Google Sans Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Google Sans Regular'), url('CSS/Tugas/assets/Google-sans.woff') format('woff');
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -16,6 +23,7 @@
         background-color: #383838;
         color: white;
         font-size: 32px;
+        font-family: 'Google Sans Regular';
     }
 
     .nav {
@@ -52,16 +60,13 @@
 
     nav a:hover {
         text-decoration: underline;
+        font-weight: bold;
         color: wheat;
     }
 
     .intro {
         padding-top: 1px;
-    }
-
-    .intro p {
-        text-align: center;
-        margin-top: 150px;
+        padding-bottom: 8%;
     }
 
     .intro img {
@@ -73,8 +78,9 @@
         margin-top: 600px;
     }
 
-    .pendidikan p {
-        text-align: center;
+    .sosmed {
+        margin-top: 300px;
+        margin-bottom: 400px;
     }
 
 </style>
@@ -84,12 +90,14 @@
         <div class="name">Nur Javier Prasetyo</div>
         <nav>
             <a href="#hom">Home</a>
+            <a href="#ab">Tentang</a>
             <a href="#pend">Pendidikan</a>
+            <a href="#sosmed">Sosial Media</a>
         </nav>
     </div>
 
     <section class="intro" id="hom">
-        <p>
+        <p style="text-align: center; margin-top: 150px;">
             Hello! My name is <b>Nur Javier Prasetyo</b><br><br>
             Nice to meet you :D
         </p>
@@ -98,14 +106,46 @@
         </center>
     </section>
 
+    <section class="about" id="ab">
+        <hr>
+        <h1 style="text-align: center; margin-top: 140px;">Tentang</h1>
+        <br>
+        <p style="margin-left: 80px;">
+            Nama saya Nur Javier Prasetyo. Asal saya dari Tuban yang sedang bersekolah di Malang. <br>
+            Hal yang biasanya saya lakukan terkadang ngoding atau bermain <i>video games</i>.
+        </p>
+    </section>
+
     <section class="pendidikan" id="pend">
         <hr>
-        <p>
-            Pendidikan<br><br>
-            Terakhir saya sekolah dimana mana<br><br>
-            Trus apalah anjay<br><br>
-            awdpoj
-        </p>
+        <h1 style="text-align: center; margin-top: 140px;">Pendidikan</h1><br><br>
+        <center>
+            <img src="CSS/Tugas/assets/sd_smp.png" width="150" height="150">
+            <h4>SD Bina Anak Sholeh Tuban</h4>
+            <p style="line-height: 0px;">2013 - 2019</p>
+            <br><br>
+            <img src="CSS/Tugas/assets/sd_smp.png" width="150" height="150">
+            <h4>SMP Bina Anak Sholeh Tuban</h4>
+            <p style="line-height: 0px;">2019 - 2022</p>
+            <br><br>
+            <img src="CSS/Tugas/assets/smk.png" width="200" height="200">
+            <h4>SMK Telkom Malang</h4>
+            <p style="line-height: 0px;">2022 - Sekarang</p>
+        </center>
+    </section>
+
+    <section class="sosmed" id="sosmed">
+        <hr>
+        <h1 style="text-align: center; margin-top: 140px;">Sosial Media</h1>
+        <center>
+            <a href="https://youtube.com/@nurjavier8789" style="text-decoration: none; color: red;" target="_blank">Youtube</a>
+            <br><br>
+            <a href="https://twitter.com/nur_javier" style="text-decoration: none; color: cyan;" target="_blank">Twitter</a>
+            <br><br>
+            <a href="https://instagram.com/nurjavier8789" style="text-decoration: none; color: rgb(255, 67, 208);" target="_blank">Instagram</a>
+            <br><br>
+            <a href="https://linkedin.com/in/nurjavier8789/" style="text-decoration: none; color: rgb(27, 30, 209);" target="_blank">LinkedIn</a>
+        </center>
     </section>
 </body>
 </html>
