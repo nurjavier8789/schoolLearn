@@ -5,32 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir</title>
+    <link rel="stylesheet" href="formFB.css">
 </head>
-
-<style>
-    .box {
-        position: absolute;
-        top: 11.5%;
-        left: 40%;
-        width: 20%;
-        height: 50%;
-        background: #E2E2E2;
-        border-radius: 20px;
-        z-index: -1;
-        box-shadow: 1px 1px 5px 5px #C4C4C4;
-    }
-
-    .space {
-        padding-top: 100px;
-    }
-</style>
 
 <body>
     <div class="space"></div>
     <center>
         <h1>Create New Account</h1>
         <div class="box"></div>
-        <form action="done.html" method="post">
+        <form action="register_acc.php" method="post">
             <table cellpadding="2">
                 <tr>
                     <td><input type="text" placeholder="First Name"></td>
@@ -112,8 +95,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" value="P" name="Gender"> Female
-                        <input type="radio" value="L" name="Gender"> Male
+                        <input type="radio" value="F" name="Gender"> Female
+                        <input type="radio" value="M" name="Gender"> Male
                     </td>
                 </tr>
                 <tr>

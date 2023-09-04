@@ -7,6 +7,26 @@
 </head>
 
 <style>
+    @keyframes hoverYT {
+        from {width: 0px;}
+        to {width: 130px;}
+    }
+
+    @keyframes hoverTWT {
+        from {width: 0px;}
+        to {width: 110px;}
+    }
+
+    @keyframes hoverIG {
+        from {width: 0px;}
+        to {width: 155px;}
+    }
+
+    @keyframes hoverLink {
+        from {width: 0px;}
+        to {width: 130px;}
+    }
+
     @font-face {
         font-family: 'Google Sans Regular';
         font-style: normal;
@@ -73,15 +93,85 @@
         width: 100;
         height: 100;
     }
-
+    
     .pendidikan {
         margin-top: 600px;
     }
-
+    
     .sosmed {
         margin-top: 300px;
-        margin-bottom: 400px;
+        margin-bottom: 200px;
     }
+
+    footer {
+        text-align: center;
+        padding: 1px;
+        background-color: #2E2E2E;
+        font-size: 20px;
+    }
+
+    footer p {
+        opacity: 50%;
+    }
+    
+    /* Animation!!! */
+
+    .hoverpurposeYT {
+        -webkit-transition: all 0.4s ease-out;
+        height: 3px;
+        width: 0px;
+    }
+
+    .hoverpurposeTWT {
+        -webkit-transition: all 0.4s ease-out;
+        height: 3px;
+        width: 0px;
+    }
+
+    .hoverpurposeIG {
+        -webkit-transition: all 0.4s ease-out;
+        height: 3px;
+        width: 0px;
+    }
+
+    .hoverpurposeLink {
+        -webkit-transition: all 0.4s ease-out;
+        height: 3px;
+        width: 0px;
+    }
+
+    .link:hover > .hoverpurposeYT {
+        -webkit-transition: all 0.4s ease-out;
+        animation-timing-function: ease-out;
+        animation-name: hoverYT;
+        height: 3px;
+        width: 130px;
+    }
+
+    .link:hover > .hoverpurposeTWT {
+        -webkit-transition: all 0.4s ease-out;
+        animation-timing-function: ease-out;
+        animation-name: hoverTWT;
+        height: 3px;
+        width: 110px;
+    }
+
+    .link:hover > .hoverpurposeIG {
+        -webkit-transition: all 0.4s ease-out;
+        animation-timing-function: ease-out;
+        animation-name: hoverIG;
+        height: 3px;
+        width: 155px;
+    }
+
+    .link:hover > .hoverpurposeLink {
+        -webkit-transition: all 0.4s ease-out;
+        animation-timing-function: ease-out;
+        animation-name: hoverLink;
+        height: 3px;
+        width: 130px;
+    }
+
 
 </style>
 
@@ -138,14 +228,28 @@
         <hr>
         <h1 style="text-align: center; margin-top: 140px;">Sosial Media</h1>
         <center>
-            <a href="https://youtube.com/@nurjavier8789" style="text-decoration: none; color: red;" target="_blank">Youtube</a>
+            <a href="https://youtube.com/@nurjavier8789" style="text-decoration: none; color: red;" target="_blank" class="link">Youtube
+                <div class="hoverpurposeYT" style="background-color: red;"></div>
+            </a>
             <br><br>
-            <a href="https://twitter.com/nur_javier" style="text-decoration: none; color: cyan;" target="_blank">Twitter</a>
+            <a href="https://twitter.com/nur_javier" style="text-decoration: none; color: cyan;" target="_blank" class="link">Twitter
+                <div class="hoverpurposeTWT" style="background-color: cyan;"></div>
+            </a>
             <br><br>
-            <a href="https://instagram.com/nurjavier8789" style="text-decoration: none; color: rgb(255, 67, 208);" target="_blank">Instagram</a>
+            <a href="https://instagram.com/nurjavier8789" style="text-decoration: none; color: rgb(255, 67, 208);" target="_blank" class="link">Instagram
+                <div class="hoverpurposeIG" style="background-color: rgb(255, 67, 208);"></div>
+            </a>
             <br><br>
-            <a href="https://linkedin.com/in/nurjavier8789/" style="text-decoration: none; color: rgb(27, 30, 209);" target="_blank">LinkedIn</a>
+            <a href="https://linkedin.com/in/nurjavier8789/" style="text-decoration: none; color: rgb(27, 30, 209);" target="_blank" class="link">LinkedIn
+                <div class="hoverpurposeLink" style="background-color: rgb(27, 30, 209);"></div>
+            </a>
         </center>
     </section>
+
+    <footer>
+        <p>
+            by Nur Javier Prasetyo
+        </p>
+    </footer>
 </body>
 </html>
